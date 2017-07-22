@@ -9,7 +9,7 @@ ENSBid
 └─ EnsEscrow
 ```
 
-ENSBid.sol: Version control for ENSEscrow.sol
+ENSBid.sol: Version control for ENSEscrow.sol.  
 ENSEscrow.sol: Escrow for ENS trade.
 
 # Getting started
