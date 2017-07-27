@@ -5,12 +5,10 @@ Implementations for version control and escrow for the Ethereum Name Service.
 
 Contract structure
 ```
-ENSBid
-└─ EnsEscrow
+EnsBidEscrow
 ```
 
-ENSBid.sol: Version control for ENSEscrow.sol.  
-ENSEscrow.sol: Escrow for ENS trade.
+ENSBidEscrow.sol: Escrow for ENS trade.
 
 # Getting started
 
@@ -25,7 +23,7 @@ Launch the RPC client, for example TestRPC:
 $ testrpc
 ```
 
-Deploy `ENSBid` and `ENSEscrow` to the private network, the deployment process is defined at [here](./migrations/2_deploy_contracts.js):
+Deploy `ENSBidEscrow` to the private network, the deployment process is defined at [here](./migrations/2_deploy_contracts.js):
 
 ```
 $ truffle migrate --reset

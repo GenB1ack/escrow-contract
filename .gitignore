@@ -1,0 +1,8 @@
+node_modules
+yarn.lock
+build
+.settings
+originalContracts
+solcover
+coverage
+coverage.json
