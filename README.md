@@ -1,4 +1,4 @@
-# ENS (Ethereum Name Service) Bid Contracts
+# ENS (Ethereum Name Service) Bid Escrow Contracts
 Implementations escrow contract for the Ethereum Name Service.
 
 ## Contracts
