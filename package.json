@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ens-bid/contracts.git"
+    "url": "git+https://github.com/ens-bid/escrow-contracts.git"
   },
   "keywords": [
     "ens"
@@ -19,9 +19,9 @@
   "author": "Phyrex Tsai",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ens-bid/contracts/issues"
+    "url": "https://github.com/ens-bid/escrow-contracts/issues"
   },
-  "homepage": "https://github.com/ens-bid/contracts",
+  "homepage": "https://github.com/ens-bid/escrow-contracts",
   "dependencies": {
     "ethereumjs-abi": "^0.6.4"
   }
