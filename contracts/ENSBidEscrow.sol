@@ -5,21 +5,23 @@ contract ENSBidEscrow {
   uint256 public ttl;             // default expire time
 
   // enum for Escrow status
+  enum Status { Start, WaitingENS, WaitingETH, Finish, Cancel }
 
   struct Escrow {
-    address buyer,
-    address seller,
-    uint256 price,
-    bytes32 ens,
-    uint256 ttl,
-    uint256 status
+    address buyer;
+    address seller;
+    uint256 price;
+    bytes32 ens;
+    uint256 ttl;
+    Status status;
   }
 
   mapping (uint256 => Escrow) escrows;
 
-  // STEP 1: 買賣成交後，買賣雙方都可以建立履約保證
+  // STEP 1: 買賣雙方達成共識後，任何人都可以替該交易建立履約保證
   function startEscrow(address _buyer, address _seller, uint256 _price, bytes32 _ens) returns (uint256 _escrowId) {
-
+    require(_price > 0);
+    // 要確認 _seller 是否有該 _ens
   }
 
   // STEP 2/3: 買方將成交金額交給履約保證合約
@@ -38,7 +40,7 @@ contract ENSBidEscrow {
   }
 
   // 透過 escrowId 查詢 Escrow 資訊
-  function viewEscrow(uint256 _escrowId) constant returns () {
+  function viewEscrow(uint256 _escrowId) constant returns (Status) {
 
   }
 
